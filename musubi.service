@@ -1,0 +1,10 @@
+[Unit]
+Description=Musubi Daemon
+
+[Service]
+ExecStart=/bin/musubi
+ExecReload=kill -9 `ps | grep musubi | awk '{print $1}'` && /bin/musubi
+ExecStop=kill -9 `ps | grep musubi | awk '{print $1}'`
+
+[Install]
+WantedBy=multi-user.target

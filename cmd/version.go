@@ -16,10 +16,23 @@
 // along with musubi. If not, see <http://www.gnu.org/licenses/>.
 //
 
-package main
+package cmd
 
-import "github.com/nrechn/musubi/cmd"
+import (
+	"fmt"
 
-func main() {
-	cmd.Execute()
+	"github.com/spf13/cobra"
+)
+
+func init() {
+	RootCmd.AddCommand(versionCmd)
+}
+
+var versionCmd = &cobra.Command{
+	Use:   "version",
+	Short: "Musubi's version information",
+	Long:  `Musubi's version information.`,
+	Run: func(cmd *cobra.Command, args []string) {
+		fmt.Println("Musubi Message Server " + "\033[35m\033[1m" + version + "\033[0m\033[39m")
+	},
 }

@@ -1,9 +1,9 @@
 [Unit]
-Description=Musubi Daemon
+Description=Musubi Message Server
 
 [Service]
-ExecStart=/bin/musubi
-ExecReload=kill -9 `ps | grep musubi | awk '{print $1}'` && /bin/musubi
+ExecStart=/bin/musubi daemon
+ExecReload=kill -9 `ps | grep musubi | awk '{print $1}'` && /bin/musubi daemon
 ExecStop=kill -9 `ps | grep musubi | awk '{print $1}'`
 
 [Install]

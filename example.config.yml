@@ -1,0 +1,22 @@
+# Domain name and port for Musubi Message Server.
+domainName: localhost
+portNumber: 8080
+
+# Server certificate chain and private key of domain name.
+certChain: /PATH/TO/YOUR/CERT/CHAIN
+certKey: /PATH/TO/YOUR/CERT/KEY
+
+# Relative path for handling HTTP POST requests.
+messageRelativePath: /nc
+
+# Relative path for providing websocket service.
+websocketRelativePath: /wc
+
+# Path to SQLite database file.
+databasePath: /tmp/data.db
+
+
+# Pushbullet Token.
+pushbullet:
+  token: fafa71fe83776cb8c7eaa4add6c018d3
+

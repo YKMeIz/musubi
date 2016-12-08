@@ -16,10 +16,31 @@
 // along with musubi. If not, see <http://www.gnu.org/licenses/>.
 //
 
-package main
+package cmd
 
-import "github.com/nrechn/musubi/cmd"
+import (
+	"fmt"
+	"os"
+)
 
-func main() {
-	cmd.Execute()
+const (
+	configFilePath = "/etc/musubi/config.yml"
+	configDirPath  = "/etc/musubi/"
+	version        = "v0.1"
+)
+
+var (
+	pushbulletToken string
+)
+
+func checkFile(path string) error {
+	if _, err := os.Stat(path); err != nil {
+		return err
+	}
+	return nil
+}
+
+func er(msg interface{}) {
+	fmt.Println("Error:", msg)
+	os.Exit(-1)
 }

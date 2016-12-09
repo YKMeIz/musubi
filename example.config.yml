@@ -18,5 +18,5 @@ databasePath: /tmp/data.db
 
 # Pushbullet Token.
 pushbullet:
-  token: fafa71fe83776cb8c7eaa4add6c018d3
+  token: YOUR.PUSHBULLET.TOKEN
 

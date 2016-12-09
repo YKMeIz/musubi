@@ -17,6 +17,12 @@ Musubi is a message server powered by [Akari Message Framework](https://github.c
 $ wget -O /bin/musubi https://github.com/nrechn/musubi/releases/download/v0.1/musubi
 ```
 
+Give `musubi` execute permission:
+
+```sh
+$ chmod 755 /bin/musubi
+```
+
 #### Create the configuration file
 
 ```sh

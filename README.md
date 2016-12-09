@@ -39,8 +39,8 @@ portNumber: 8080
 
 # Server certificate chain and private key of domain name.
 # Leave them empty if you don't want to enable TLS/SSL
-certChain: /PATH/TO/YOUR/CERT/CHAIN
-certKey: /PATH/TO/YOUR/CERT/KEY
+certChain: /path/to/your/cert/chain
+certKey: /path/to/your/cert/key
 
 # Relative path for handling HTTP POST requests.
 messageRelativePath: /nc
@@ -49,12 +49,11 @@ messageRelativePath: /nc
 websocketRelativePath: /wc
 
 # Path to SQLite database file.
-databasePath: /tmp/data.db
-
+databasePath: /path/to/your/database/file
 
 # Pushbullet Token.
 pushbullet:
-  token: YOUR.PUSHBULLET.TOKEN
+  token: your.pushbullet.token
 
 ```
 

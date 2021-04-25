@@ -1,11 +1,11 @@
-<img align="right" src="https://raw.githubusercontent.com/nrechn/musubi/master/logo.png">
+<img align="right" src="https://raw.githubusercontent.com/YKMeIz/musubi/main/logo.png">
 
 # Musubi Message Server
-[![License](https://img.shields.io/badge/license-GPL--3.0-red.svg?style=flat-square)](https://github.com/nrechn/musubi/blob/master/LICENSE)
-[![Go Report Card](https://goreportcard.com/badge/github.com/nrechn/musubi?style=flat-square)](https://goreportcard.com/report/github.com/nrechn/musubi)
+[![License](https://img.shields.io/badge/license-GPL--3.0-red.svg?style=flat-square)](https://github.com/YKMeIz/musubi/blob/main/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/YKMeIz/musubi?style=flat-square)](https://goreportcard.com/report/github.com/YKMeIz/musubi)
 
 
-Musubi is a message server powered by [Akari Message Framework](https://github.com/nrechn/akari). It follows KISS (Keep it simple, stupid) design principle, and is designed for IoT communication and notification push from *nix side to any device.
+Musubi is a message server powered by [Akari Message Framework](https://github.com/YKMeIz/akari). It follows KISS (Keep it simple, stupid) design principle, and is designed for IoT communication and notification push from *nix side to any device.
 
 ## Installation
 
@@ -14,7 +14,7 @@ Musubi is a message server powered by [Akari Message Framework](https://github.c
 #### Download and install source
 
 ```sh
-$ wget -O /bin/musubi https://github.com/nrechn/musubi/releases/download/v0.1/musubi
+$ wget -O /bin/musubi https://github.com/YKMeIz/musubi/releases/download/v0.1/musubi
 ```
 
 Give `musubi` execute permission:
@@ -62,7 +62,7 @@ pushbullet:
 A systemd service unit configuration could be utilized to manage `musubi daemon`.
 
 ```sh
-$ wget -O /usr/lib/systemd/system/musubi.service https://github.com/nrechn/musubi/raw/master/musubi.service
+$ wget -O /usr/lib/systemd/system/musubi.service https://github.com/YKMeIz/musubi/raw/main/musubi.service
 ```
 
 Reload systemd, scanning for new or changed units:

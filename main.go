@@ -18,7 +18,7 @@
 
 package main
 
-import "github.com/nrechn/musubi/cmd"
+import "github.com/YKMeIz/musubi/cmd"
 
 func main() {
 	cmd.Execute()

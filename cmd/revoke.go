@@ -22,7 +22,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nrechn/akari"
+	"github.com/YKMeIz/akari"
 	"github.com/spf13/cobra"
 )
 
